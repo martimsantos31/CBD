@@ -1,0 +1,25 @@
+Nomes e registros carregados no Redis
+Search for ('Enter' for quit): concha
+concha (9 registos)
+Search for ('Enter' for quit): carolina
+carolina (1174 registos)
+Search for ('Enter' for quit): maria
+maria (5640 registos)
+mariana (1152 registos)
+mariam (4 registos)
+mariama (2 registos)
+mariano (2 registos)
+marianna (1 registos)
+marialuísa (1 registos)
+mariame (1 registos)
+mariah (1 registos)
+Search for ('Enter' for quit): marti
+martim (1497 registos)
+martinho (22 registos)
+martin (20 registos)
+martina (11 registos)
+martinha (7 registos)
+martins (1 registos)
+martino (1 registos)
+martiano (1 registos)
+Search for ('Enter' for quit):

@@ -1,0 +1,18 @@
+Insira o nome do utilizador e o produto separados por ponto e vírgula (ou 'q' para sair):
+martim;lapis
+Pedido aceito: [lapis] para o usuário [martim]
+Insira o nome do utilizador e o produto separados por ponto e vírgula (ou 'q' para sair):
+martim;caneta
+Pedido aceito: [caneta] para o usuário [martim]
+Insira o nome do utilizador e o produto separados por ponto e vírgula (ou 'q' para sair):
+martim;borracha
+Pedido aceito: [borracha] para o usuário [martim]
+Insira o nome do utilizador e o produto separados por ponto e vírgula (ou 'q' para sair):
+martim;cadeira
+ERRO: O limite de 3 pedidos por usuário foi atingido nesta janela de tempo.
+Insira o nome do utilizador e o produto separados por ponto e vírgula (ou 'q' para sair):
+angela;lapis
+Pedido aceito: [lapis] para o usuário [angela]
+Insira o nome do utilizador, produto e quantidade separados por ponto e vírgula (ou 'q' para sair):
+q
+Saindo...
