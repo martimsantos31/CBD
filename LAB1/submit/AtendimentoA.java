@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class AtendimentoA {
 
-    private static final int LIMIT = 2;
+    private static final int LIMIT = 3;
     private static final int TIMESLOT = 30000;
 
     private Jedis jedis;
@@ -15,13 +15,13 @@ public class AtendimentoA {
         this.jedis = new Jedis();
     }
 
-    public void registerRequest(String username, String product) {
-        long currentTimeMillis = System.currentTimeMillis();
+    public void registerRequest(String username, String product, int currentTime) {
+        int currentTimeMillis = (int)System.currentTimeMillis();
 
         List<String> recentRequests = jedis.zrangeByScore(username, currentTimeMillis - TIMESLOT, currentTimeMillis);
 
         if (recentRequests.size() < LIMIT) {
-            jedis.zadd(username, currentTimeMillis, product);
+            jedis.zadd(username, currentTime, product);
             System.out.println("Pedido aceito: [" + product + "] para o usuário [" + username + "]");
         } else {
             System.err.println("ERRO: O limite de " + LIMIT + " pedidos por usuário foi atingido nesta janela de tempo.");
@@ -29,11 +29,13 @@ public class AtendimentoA {
     }
 
     public static void main(String[] args) {
+
         AtendimentoA system = new AtendimentoA();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
             System.out.println("Insira o nome do utilizador e o produto separados por ponto e vírgula (ou 'q' para sair):");
+            int currentTime1 = (int)System.currentTimeMillis();
             String input = scanner.nextLine().trim();
 
             if (input.equalsIgnoreCase("q")) {
@@ -60,7 +62,7 @@ public class AtendimentoA {
                 continue;
             }
 
-            system.registerRequest(username, product);
+            system.registerRequest(username, product,currentTime1);
         }
 
         scanner.close();

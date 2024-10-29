@@ -1,0 +1,32 @@
+Numero de localidades distintas: 6
+Numero de restaurantes por localidade:
+-> null-2
+-> Queens-738
+-> Staten Island-158
+-> Manhattan-1883
+-> Brooklyn-684
+-> Bronx-309
+Restaurantes com nome próximo a 'Park':
+-> The Park
+-> Park'S Snack
+-> Park Bar
+-> Terrace On The Park
+-> Whiskey Park
+-> Park Billiards
+-> Pizza Park
+-> The Park Slope Chipshop
+-> Central Park Boathouse
+-> Morris Park Pizza
+-> Tribeca Park Cafe
+-> Gigino At Wagner Park
+-> Park Italian Gourment
+-> Dyker Park Bagels
+-> Rego Park Cafe
+-> Park Plaza Restaurant
+-> Sunset Park Diner & Donuts
+-> Park Slope Ale House
+-> Forest Park Golf Course
+-> Nora'S Park Bench Cafe
+-> New Park Pizzeria & Restaurant
+-> Morris Park Bake Shop
+-> The Hallmark Of Battery Park City- Dining Room

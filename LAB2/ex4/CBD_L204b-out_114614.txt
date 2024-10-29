@@ -1,0 +1,3 @@
+Pedido registrado com sucesso para o usuário user3 para o produto productA com quantidade 10
+Pedido registrado com sucesso para o usuário user3 para o produto productB com quantidade 15
+Erro: Limite de unidades de produto atingido para o usuário user3

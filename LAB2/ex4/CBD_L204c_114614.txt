@@ -1,0 +1,22 @@
+MongoDB é uma base de dados NoSQL baseada em documentos, ou seja armazena a informação em documentos JSON. Ideal
+para guradar informações complexas e organizadas hierarquicamente. Já o Redis é um banco de dados NoSQL baseado em
+memória, ou seja, armazena a informação na memória RAM. Ideal para guardar informações temporarias e fazer caching de
+dados.
+
+Os prós do mongoDB são:
+- Armazenamento de dados persistente e estruturado
+- Flexibilidade de realizar consultas complexas
+
+Os contras do mongoDB são:
+- Pode ser mais lento em cenários de leitura e escrita
+
+Os prós do Redis são:
+- Alta performance
+- Ideal para caching de dados
+
+Os contras do Redis são:
+- Não é ideal para armazenamento de dados persistentes
+- Não é ideal para armazenamento de dados complexos
+
+Para a implementação do exercício conforme descrito, or edis tende a ser mais prático e rápido, pois o problema está focado
+ mais no controlo por tempo e volume, que o redis parece lidar muito bem.
