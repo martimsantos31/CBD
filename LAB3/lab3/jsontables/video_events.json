@@ -1,0 +1,6 @@
+video_id,username,event_timestamp,event_type
+9017b730-0de7-4a9c-b4f0-b2a4b380d6e0,bob_the_builder,2024-11-22 19:29:56.775+0000,pause
+5b9ca47a-6062-4ec2-ac6d-5ffcd91fadcc,charlie_d,2024-11-22 19:29:56.783+0000,stop
+3a4d7b3e-7aa4-43ec-bdc8-94544035c89f,alice123,2024-11-22 19:29:56.767+0000,play
+f49f7e02-aeb8-4ccb-8a1a-409f96034866,daniel_w,2024-11-22 19:29:56.791+0000,play
+c09a1c83-4324-4e3a-98e7-cc72ccc5dca5,eve_t,2024-11-22 19:29:57.263+0000,play

@@ -1,0 +1,40 @@
+Cassandra é um base de dados, não relacional orientada a colunas.
+
+Um KeySpace é um namespace que define a replicação nos nós. Um cluster contem um keyspace por nó e para o criarmos temos
+de usar o comando CREATE KEYSPACE.
+
+Digamos que um keyspace é um schema em bases de dados relacionais, e para criamos tabelas e fazer operações sobre elas
+temos de estar a trabalhar num keyspace.
+
+CREATE TABLE users (
+   user_id UUID PRIMARY KEY,
+   name text,
+   email text,
+   age int
+);
+
+INSERT INTO users (user_id, name, email, age)
+VALUES (uuid(), 'João Silva', 'joao.silva@example.com', 25);
+
+Como podemos verificar a sintaxe é muito semelhante a SQL, mas com algumas diferenças. Por exemplo, o tipo de dados UUID.
+
+UPDATE users
+SET age = 26
+WHERE user_id = cc94675c-de01-474a-8fac-36b7de1ddcda;
+
+DELETE FROM users WHERE user_id = cc94675c-de01-474a-8fac-36b7de1ddcda;
+
+Diferente de sql em cassandra podemos ter listas, tuplos, sets, maps, em vez de apenas tipos de dados primitivos.
+
+Ou seja neste exemplo dos users, na vida real uma pessoa podeter vários emails, para fazermos isso basta mudar o tipo de
+dados de email para set<text> e podemos adicionar vários emails a um utilizador. A este tipo de dados chamamos de collections.
+
+Também podemos adicionar um TTL quando adicionamos o registo, para que o registo seja automaticamente apagado após um
+determinado tempo.
+
+Temos também um tipo de dados que é o TIMESTAMP, que identifica o momento em que o registo foi inserido ou atualizado.
+
+
+
+
+

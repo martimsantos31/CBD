@@ -132,4 +132,3 @@ dos restaurantes com score médio superior a 30 desde 1-Jan-2014.
 
 db.restaurants.aggregate([{$unwind: "$grades"}, {$match: {"grades.date": {$gte: ISODate("2014-01-01T00:00:00Z")}}}, {$group: {_id: "$nome", avgScore: {$avg: "$grades.score"}, numGrades: {$sum: 1}}}, {$match: {avgScore: {$gt: 30}}}, {$project: {_id: 0, nome: "$_id", avgScore: 1, numGrades: 1}}])
 
-//26.
