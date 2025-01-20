@@ -1,0 +1,10 @@
+{"video_id": 1, "user_username": "jane_smith", "event_date": "2023-05-01 13:10:00.000Z", "event_type": "play"}
+{"video_id": 2, "user_username": "john_doe", "event_date": "2023-05-02 15:10:00.000Z", "event_type": "stop"}
+{"video_id": 2, "user_username": "charlie_brown", "event_date": "2023-05-02 15:15:00.000Z", "event_type": "play"}
+{"video_id": 4, "user_username": "george_wash", "event_date": "2023-05-04 14:35:00.000Z", "event_type": "pause"}
+{"video_id": 4, "user_username": "fiona_shrek", "event_date": "2023-05-04 14:30:00.000Z", "event_type": "play"}
+{"video_id": 5, "user_username": "john_doe", "event_date": "2023-05-05 12:55:00.000Z", "event_type": "play"}
+{"video_id": 3, "user_username": "daisy_duck", "event_date": "2023-05-03 10:10:00.000Z", "event_type": "play"}
+{"video_id": 1, "user_username": "alice_wonder", "event_date": "2023-05-01 14:05:00.000Z", "event_type": "pause"}
+{"video_id": 3, "user_username": "eric_cartman", "event_date": "2023-05-03 10:15:00.000Z", "event_type": "pause"}
+{"video_id": 5, "user_username": "harry_potter", "event_date": "2023-05-05 12:50:00.000Z", "event_type": "stop"}

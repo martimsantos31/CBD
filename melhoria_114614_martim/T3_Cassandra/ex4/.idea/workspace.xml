@@ -4,36 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd6d32c1-1abc-4791-a5eb-e4263499686e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CBD_L42_00000.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/CBD_L42_00000.TXT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CBD_L43_00000.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/CBD_L43_00000.TXT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pt/ua/cbd/lab4/ex4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pt/ua/cbd/lab4/ex4/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="0f1f0f45-54c2-41f4-af1c-3b548569ce80" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2qPMkwRXC5itFp4qdZuSske3Ibj" />
+  <component name="ProjectId" id="2rsGKGSpDWbtM1ZSKrJ6Oq06nct" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/martimsantos/Melhoria CBD/LAB1",
+    "last_opened_file_path": "/home/martimsantos/Melhoria CBD/T3_Cassandra/ex3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -42,25 +31,23 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pt.ua.cbd.lab4.ex4.Main" />
-      <module name="lab4-neo4j" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pt.ua.cbd.lab4.ex4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ex4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ex4" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -73,16 +60,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fd6d32c1-1abc-4791-a5eb-e4263499686e" name="Changes" comment="" />
-      <created>1734559903636</created>
+      <changelist id="0f1f0f45-54c2-41f4-af1c-3b548569ce80" name="Changes" comment="" />
+      <created>1737340306882</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1734559903636</updated>
-      <workItem from="1734559905507" duration="7407000" />
-      <workItem from="1734632087345" duration="2000" />
-      <workItem from="1734718326369" duration="25000" />
-      <workItem from="1737137283092" duration="4000" />
-      <workItem from="1737213878964" duration="15000" />
+      <updated>1737340306882</updated>
+      <workItem from="1737340307591" duration="932000" />
+      <workItem from="1737383843446" duration="8458000" />
+      <workItem from="1737394112293" duration="4642000" />
+      <workItem from="1737400533770" duration="9658000" />
+      <workItem from="1737410587058" duration="49000" />
+      <workItem from="1737410760313" duration="11000" />
     </task>
     <servers />
   </component>

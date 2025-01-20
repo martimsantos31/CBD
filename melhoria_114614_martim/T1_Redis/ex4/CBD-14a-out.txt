@@ -1,0 +1,31 @@
+Search for ('Enter' for quit): maria
+--------------------
+maria
+mariam
+marian
+mariana
+mariann
+marianna
+marianne
+--------------------
+Search for ('Enter' for quit): susa
+--------------------
+susan
+susana
+susanetta
+susann
+susanna
+susannah
+susanne
+--------------------
+Search for ('Enter' for quit): zora
+--------------------
+zora
+zorah
+zorana
+--------------------
+Search for ('Enter' for quit):
+
+--------------------
+
+Process finished with exit code 0

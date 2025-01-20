@@ -1,0 +1,57 @@
+Resultados das Queries:
+
+Querie: MATCH (t:Track) RETURN COUNT(t) AS TotalFaixas
+Record<{TotalFaixas: 6187}>
+
+Querie: MATCH (ar:Artist) RETURN COUNT(ar) AS TotalArtistas
+Record<{TotalArtistas: 6103}>
+
+Querie: MATCH (a:Album) RETURN COUNT(a) AS TotalAlbuns
+Record<{TotalAlbuns: 4949}>
+
+Querie: MATCH (t:Track) RETURN t.name AS Nome, t.genre AS Genero LIMIT 10
+Record<{Nome: "Acoustic", Genero: "acoustic"}>
+Record<{Nome: "Acoustic", Genero: "acoustic"}>
+Record<{Nome: "Here Comes the Sun - Acoustic", Genero: "acoustic"}>
+Record<{Nome: "Acoustic #3", Genero: "acoustic"}>
+Record<{Nome: "My Love Mine All Mine - Acoustic Instrumental", Genero: "acoustic"}>
+Record<{Nome: "Acoustic", Genero: "acoustic"}>
+Record<{Nome: "Beautiful Things - Acoustic", Genero: "acoustic"}>
+Record<{Nome: "Landslide", Genero: "acoustic"}>
+Record<{Nome: "Acoustic", Genero: "acoustic"}>
+Record<{Nome: "Acoustic Energy Vibrations", Genero: "acoustic"}>
+
+Querie: MATCH (t:Track)-[:PERFORMED_BY]->(ar:Artist) RETURN t.name AS Faixa, ar.name AS Artista LIMIT 10
+
+Querie: MATCH (t:Track)-[:INCLUDED_IN]->(a:Album) RETURN t.name AS Faixa, a.name AS Album LIMIT 10
+
+Querie: MATCH (ar:Artist)-[:CREATED]->(a:Album) RETURN ar.name AS Artista, a.name AS Album LIMIT 10
+
+Querie: MATCH (t:Track) WHERE t.explicit = true RETURN t.name AS Faixa, t.explicit AS Explicito LIMIT 10
+Record<{Faixa: "Inertia - Acoustic", Explicito: TRUE}>
+Record<{Faixa: "Acoustic Levitation", Explicito: TRUE}>
+Record<{Faixa: "Snooze (Acoustic) (feat. Justin Bieber)", Explicito: TRUE}>
+Record<{Faixa: "Acoustic", Explicito: TRUE}>
+Record<{Faixa: "Afrobeat 2023 Mixtape", Explicito: TRUE}>
+Record<{Faixa: "UNAVAILABLE (feat. Musa Keys)", Explicito: TRUE}>
+Record<{Faixa: "Soweto", Explicito: TRUE}>
+Record<{Faixa: "Afrobeats Mix Flight OSO 149", Explicito: TRUE}>
+Record<{Faixa: "Charm", Explicito: TRUE}>
+Record<{Faixa: "Afrobeats 2023", Explicito: TRUE}>
+
+Querie: MATCH (t:Track) RETURN t.name AS Faixa, t.popularity AS Popularidade ORDER BY t.popularity DESC LIMIT 10
+Record<{Faixa: "Houdini", Popularidade: 90}>
+Record<{Faixa: "Clean Baby Sleep White Noise (Loopable)", Popularidade: 88}>
+Record<{Faixa: "As It Was", Popularidade: 87}>
+Record<{Faixa: "\"One Of The Girls (with JENNIE, Lily Rose Depp)\"", Popularidade: 87}>
+Record<{Faixa: "BAND4BAND (feat. Lil Baby)", Popularidade: 87}>
+Record<{Faixa: "Beautiful Things", Popularidade: 86}>
+Record<{Faixa: "Magnetic", Popularidade: 86}>
+Record<{Faixa: "Pink Skies", Popularidade: 85}>
+Record<{Faixa: "Slow It Down", Popularidade: 85}>
+Record<{Faixa: "Starboy", Popularidade: 84}>
+
+Querie: MATCH (ar:Artist)-[:PERFORMED_BY]->(t:Track) RETURN ar.name AS Artista, COUNT(t) AS TotalFaixas ORDER BY TotalFaixas DESC LIMIT 10
+
+PS: Por alguma razão que eu tentei descobrir mas não consegui algumas queries não funcionaram por um mau funcionamento
+dos relacionamentos entre os nós, mas a query está correta.
