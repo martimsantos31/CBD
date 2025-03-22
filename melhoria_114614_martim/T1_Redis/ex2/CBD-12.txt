@@ -1,2 +1,0 @@
-redis-server
-redis-cli < CBD-12-batch.txt

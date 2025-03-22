@@ -1,3 +1,2 @@
-Na pasta do lab executei:
-
-cat CBD-12-batch.txt | redis-cli
+redis-server
+redis-cli < CBD-12-batch.txt

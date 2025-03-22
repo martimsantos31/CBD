@@ -1,23 +1,27 @@
 package pt.ua.deti.cbd;
 
+import java.util.List;
+import java.util.ArrayList;
 import redis.clients.jedis.Jedis;
 
 public class SimplePostList {
-    public static String USERS_KEY = "users";
+
+    public static String OBJECTS_KEY = "objects";
 
     public static void main(String[] args) {
         Jedis jedis = new Jedis();
+        List<String> objects = new ArrayList<>();
 
-        String[] users = {"Ana", "Pedro", "Maria", "Luis"};
+        objects.add("Lápis");
+        objects.add("Caneta");
+        objects.add("Borracha");
+        objects.add("Lapiseira");
 
-        jedis.del(USERS_KEY);
-
-        for (String user : users) {
-            jedis.rpush(USERS_KEY, user);
+        for(String object : objects){
+            jedis.lpush(OBJECTS_KEY, object);
         }
 
-        jedis.lrange(USERS_KEY, 0, -1).forEach(System.out::println);
-
+        jedis.lrange(OBJECTS_KEY, 0, -1).forEach(System.out::println);
         jedis.close();
     }
 }

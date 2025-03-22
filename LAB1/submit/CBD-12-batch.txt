@@ -1,5 +1,0 @@
-select 4
-set pessoa1 martim
-set pessoa2 rui
-set pessoa3 gui
-set pessoa4 joao

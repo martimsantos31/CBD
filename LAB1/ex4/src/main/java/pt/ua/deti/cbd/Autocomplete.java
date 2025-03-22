@@ -1,71 +1,49 @@
 package pt.ua.deti.cbd;
 
-
 import redis.clients.jedis.Jedis;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.List;
-import java.util.ArrayList;
+
+import java.io.*;
 import java.util.Scanner;
 
+public class AutoComplete {
 
-public class Autocomplete {
-    private static final String REDIS_KEY = "names";
-    private Jedis jedis;
+    public static String path = "names.txt";
+    public static String NAMES_KEY = "names:1";
 
-    public Autocomplete() {
-        jedis = new Jedis("localhost", 6379);
-    }
+    public static void main( String[] args ) throws IOException {
+        Jedis jedis = new Jedis();
+        Scanner sc = new Scanner(System.in);
 
-    public void loadNamesIntoDB(String filePath) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                jedis.zadd(REDIS_KEY, 0, line.toLowerCase());
+        jedis.flushAll();
+
+        BufferedReader br = new BufferedReader(new FileReader(path));
+        String line = "";
+
+        while(true){
+            if (line != null){
+                jedis.zadd(NAMES_KEY, 0, line);
             }
-            System.out.println("Nomes carregados no Redis");
-        } catch (IOException e) {
-            System.out.println("Erro ao carregar nomes: " + e.getMessage());
-        }
-    }
-
-
-    public List<String> autocomplete(String prefix) {
-        String min = prefix.toLowerCase();
-        String max = prefix.toLowerCase() + "\uFFFF";
-
-
-        List<String> results = new ArrayList<>(jedis.zrangeByLex(REDIS_KEY, "[" + min, "[" + max));
-
-        return results;
-    }
-
-    public static void main(String[] args) {
-
-        Autocomplete autocomplete = new Autocomplete();
-
-        autocomplete.loadNamesIntoDB("names.txt");
-
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
-            System.out.print("Search for ('Enter' for quit): ");
-            String input = scanner.nextLine();
-            if (input.isEmpty()) {
+            else{
                 break;
             }
+            line = br.readLine();
+        }
+        br.close();
 
-            List<String> suggestions = autocomplete.autocomplete(input);
-            if (suggestions.isEmpty()) {
-                System.out.println("No suggestions found.");
-            } else {
-                suggestions.forEach(System.out::println);
+
+        while(true){
+            System.out.print("Search for ('Enter' for quit): ");
+            String prefix = sc.nextLine();
+            System.out.println("--------------------");
+            if (prefix.equals("")){
+                break;
             }
+            jedis.zrangeByLex(NAMES_KEY, "[" + prefix, "[" + prefix + "\uFFFF").forEach(System.out::println);
+            System.out.println("--------------------");
         }
 
-        autocomplete.jedis.close();
-        scanner.close();
+        jedis.close();
+        sc.close();
+
     }
 }
-
-

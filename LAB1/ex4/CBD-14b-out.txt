@@ -1,25 +1,43 @@
-Nomes e registros carregados no Redis
-Search for ('Enter' for quit): concha
-concha (9 registos)
-Search for ('Enter' for quit): carolina
-carolina (1174 registos)
-Search for ('Enter' for quit): maria
-maria (5640 registos)
-mariana (1152 registos)
-mariam (4 registos)
-mariama (2 registos)
-mariano (2 registos)
-marianna (1 registos)
-marialuísa (1 registos)
-mariame (1 registos)
-mariah (1 registos)
-Search for ('Enter' for quit): marti
-martim (1497 registos)
-martinho (22 registos)
-martin (20 registos)
-martina (11 registos)
-martinha (7 registos)
-martins (1 registos)
-martino (1 registos)
-martiano (1 registos)
+Search for ('Enter' for quit): Maria
+Maria-5640.0
+Mariana-1152.0
+Mariam-4.0
+Mariano-2.0
+Mariama-2.0
+Marianna-1.0
+Mariame-1.0
+Mariah-1.0
+MariaLuísa-1.0
+--------------------
+Search for ('Enter' for quit): Joa
+Joana-625.0
+Joaquim-75.0
+Joabe-7.0
+Joaquina-1.0
+Joaninha-1.0
+--------------------
+Search for ('Enter' for quit): Car
+Carolina-1174.0
+Carlota-367.0
+Carminho-193.0
+Carlos-135.0
+Carla-24.0
+Carmo-22.0
+Carina-19.0
+Carmen-10.0
+Carol-6.0
+Caroline-1.0
+Carole-1.0
+Carmina-1.0
+Carmela-1.0
+Carmel-1.0
+Carlotta-1.0
+Carlo-1.0
+Carlize-1.0
+Carlene-1.0
+Carine-1.0
+--------------------
 Search for ('Enter' for quit):
+
+
+Process finished with exit code 0

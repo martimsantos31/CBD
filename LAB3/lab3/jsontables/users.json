@@ -1,6 +1,0 @@
-user_id,email,name,registration_timestamp,username
-bc441e59-a426-4a74-84d5-71196b127d86,bob.builder@example.com,Bob Brown,2024-11-22 19:29:27.669+0000,bob_the_builder
-b8e36056-c1fa-464a-946a-fe1175afe969,charlie.d@example.com,Charlie Davis,2024-11-22 19:29:27.676+0000,charlie_d
-f391cf1d-8aee-4c17-8dfc-8964e8b67a57,daniel.wilson@example.com,Daniel Wilson,2024-11-22 19:29:27.683+0000,daniel_w
-df41c150-8d80-43aa-b098-7b5b0a442067,alice.smith@example.com,Alice Smith,2024-11-22 19:29:27.641+0000,alice123
-27757bb3-7bb0-4094-a6ae-72c1c03da02a,eve.taylor@example.com,Eve Taylor,2024-11-22 19:29:28.708+0000,eve_t

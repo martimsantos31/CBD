@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd6d32c1-1abc-4791-a5eb-e4263499686e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CBD-L44c_output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CBD_L42_00000.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/CBD_L42_00000.TXT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CBD_L43_00000.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/CBD_L43_00000.TXT" afterDir="false" />
@@ -18,9 +19,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
   <component name="ProjectId" id="2qPMkwRXC5itFp4qdZuSske3Ibj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,7 +34,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/martimsantos/Melhoria CBD/LAB1",
+    "last_opened_file_path": "/home/martimsantos/Universidade/3Ano/1Semestre/CBD/LAB4",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -65,8 +66,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
       </set>
     </attachedChunks>
   </component>
@@ -79,10 +80,6 @@
       <option name="presentableId" value="Default" />
       <updated>1734559903636</updated>
       <workItem from="1734559905507" duration="7407000" />
-      <workItem from="1734632087345" duration="2000" />
-      <workItem from="1734718326369" duration="25000" />
-      <workItem from="1737137283092" duration="4000" />
-      <workItem from="1737213878964" duration="15000" />
     </task>
     <servers />
   </component>

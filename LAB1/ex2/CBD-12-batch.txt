@@ -1,5 +1,22 @@
-select 4
-set pessoa1 martim
-set pessoa2 rui
-set pessoa3 gui
-set pessoa4 joao
+hset dog:1 name Jack breed Beagle age 3 weight 12
+hset dog:2 name Max breed Labrador age 5 weight 25
+hget dog:1 name
+hget dog:2 breed
+acl setuser leitor on >qwerty +get ~dog:* +hget ~dog:*
+acl setuser escritor on >qwerty +set ~dog:* +hset ~dog:*
+acl setuser admin on >qwerty +@all
+auth leitor qwerty
+hget dog:1 name
+hset dog:3 name Rex breed Bulldog age 4 weight 20
+auth escritor qwerty
+hset dog:3 name Rex breed Bulldog age 4 weight 20
+auth admin qwerty
+sadd set:1 dog:1
+sadd set:1 dog:2
+smembers set:1
+sadd set:2 dog:3
+sadd set:2 dog:2
+smembers set:2
+sunion set:1 set:2
+sinter set:1 set:2
+sdiff set:1 set:2
